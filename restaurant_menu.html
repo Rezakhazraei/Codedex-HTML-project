@@ -9,22 +9,37 @@
     <header>
         <img id="header_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYr-r-BGg0B3X2nXtKkHg-ytlHUnBMqPoPlQ&s" alt="Restaurant Logo">
         <h1>Health Kitchen</h1>
-        <nav id="menu">
-            <h2>Menu</h2>
-            <article>
-                <img src="" alt="">
-            </article>
-            <article>
-                <h3></h3>
-            </article>
-            <article>
-                <p></p>
-            </article>
-        </nav>
-        <nav id="order_form">
-            <h2>Place Your Order</h2>
-            <form action=""></form>
+        <nav>
+            <a href="#menu">Menu</a>
+            <a href="#order_form">Place Your Order</a>
         </nav>
     </header>
+    <main>
+        <section id="menu">
+            <h2>Menu</h2>
+            <article>
+                <img src="https://picsum.photos/200/300" alt="Menu Item 1">
+                <h3>Grilled Chicken Burger</h3>
+                <p>A juicy grilled chicken burger with lettuce, tomato, and mayo. <i>$8.99</i></p>
+            </article>
+            <article>
+                <img src="https://picsum.photos/200/301" alt="Menu Item 2">
+                <h3>Crispy Chicken Tenders</h3>
+                <p>Tender and crispy chicken strips served with dipping sauce. <i>$7.99</i></p>
+            </article>
+            <article>
+                <img src="https://picsum.photos/200/302" alt="Menu Item 3">
+                <h3>Vegetable Salad</h3>
+                <p>A fresh mix of vegetables, fruits, and nuts. <i>$6.99</i></p>
+            </article>
+        </section>
+        <section id="order_form">
+            <h2>Place Your Order</h2>
+            <form>
+                <label for="burger">Grilled Chicken Burger:</label>
+                <input type="number" id="burger" name="burger" min="0" max="10">
+            </form>
+        </section>
+    </main>
 </body>
 </html>
