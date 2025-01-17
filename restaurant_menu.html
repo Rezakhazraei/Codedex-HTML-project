@@ -4,10 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Health Kitchen</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+        
+        header {
+            background-color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        #header-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        
+        nav {
+            background-color: #727272;
+            color: #ffffff;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 10px;
+        }
+        
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        section {
+            background-color: #727272;
+            padding: 35px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        }
+        
+        article {
+            margin: 20px;
+        }
+        
+        article img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        
+        form {
+            display: block;
+            flex-direction: inline;
+            align-items: center;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+        
+        label {
+            margin: 10px;
+        }
+        
+        input[type="number"] {
+            width: 50px;
+        }
+        
+        input[type="radio"], input[type="checkbox"] {
+            margin: 10px;
+        }
+        
+        textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        
+        footer {
+            background-color: #727272;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <img id="header_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYr-r-BGg0B3X2nXtKkHg-ytlHUnBMqPoPlQ&s" alt="Restaurant Logo">
+        <img id="header_img" src="https://img.freepik.com/premium-vector/restaurant-logo-design-template_79169-56.jpg?w=150" alt="Restaurant Logo">
         <h1>Health Kitchen</h1>
         <nav>
             <a href="#menu">Menu</a>
@@ -18,17 +116,17 @@
         <section id="menu">
             <h2>Menu</h2>
             <article>
-                <img src="https://picsum.photos/200/300" alt="Menu Item 1">
+                <img src="https://t3.ftcdn.net/jpg/06/78/34/76/360_F_678347688_fuQ3L5yBzpP7Ilk6HpIN8xkY9EWsBtmU.jpg" alt="Menu Item 1">
                 <h3>Grilled Chicken Burger</h3>
                 <p>A juicy grilled chicken burger with lettuce, tomato, and mayo. <i>$8.99</i></p>
             </article>
             <article>
-                <img src="https://picsum.photos/200/301" alt="Menu Item 2">
+                <img src="https://t4.ftcdn.net/jpg/05/28/45/11/360_F_528451179_7ittb7VanqYaJ5mWZ5CkbsizvGjT6ZiB.jpg" alt="Menu Item 2">
                 <h3>Crispy Chicken Tenders</h3>
                 <p>Tender and crispy chicken strips served with dipping sauce. <i>$7.99</i></p>
             </article>
             <article>
-                <img src="https://picsum.photos/200/302" alt="Menu Item 3">
+                <img src="https://media.istockphoto.com/id/175197961/photo/salad-plate.jpg?s=612x612&w=0&k=20&c=9lxiIPsTBH7ytCXWuC__FvWyxkPxtkJ2evoNLrwhOVA=" alt="Menu Item 3">
                 <h3>Vegetable Salad</h3>
                 <p>A fresh mix of vegetables, fruits, and nuts. <i>$6.99</i></p>
             </article>
@@ -37,9 +135,24 @@
             <h2>Place Your Order</h2>
             <form>
                 <label for="burger">Grilled Chicken Burger:</label>
-                <input type="number" id="burger" name="burger" min="0" max="10">
+                <input type="number" id="burger" name="burger" min="0" value="0">
+                <label for="tenders">Crispy Chicken Tenders:</label>
+                <input type="number" id="tenders" name="tenders" min="0" value="0">
+                <label for="salad">Vegetable Salad:</label>
+                <input type="number" id="salad" name="salad" min="0" value="0">
+                <label for="sides">Sides:</label>
+                <input type="radio" id="fries" name="sides" value="fries">
+                <label for="fries">Fries</label>
+                <input type="radio" id="onion_rings" name="sides" value="onion_rings">
+                <label for="onion_rings">Onion Rings</label>
+                <label for="special-requests">Special Requests:</label>
+                <textarea name="special-requests" id="special-requests" placeholder="Any special requests ?"></textarea>
+                <input type="submit" value="Go To Checkout">
             </form>
         </section>
     </main>
+    <footer>
+        <p>Made with love by abolfazlkh18469</p>
+    </footer>
 </body>
 </html>
